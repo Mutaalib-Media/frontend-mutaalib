@@ -1,11 +1,11 @@
 <template>
     <div>
-        <form>
-            <div class="pt-2 relative mx-auto text-gray-600">
+        <form method="get" action="/search">
+            <div class="relative text-gray-600">
                 <input
-                    class="md:w-80 lg:w-96 group-hover:border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                    class="w-full group-hover:border-2 border-gray-300 bg-white h-9 px-5 pr-10 rounded-lg text-sm focus:outline-none"
                     type="search" name="query" placeholder="Search anything">
-                <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+                <button type="submit" class="absolute right-0 top-0 mt-3 mr-3">
                     <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                         viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"

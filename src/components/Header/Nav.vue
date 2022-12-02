@@ -16,7 +16,9 @@
             <router-link to="/"><img class="hidden h-8 w-auto lg:block" src="../../assets/images/logo.png" alt="Your Company" /></router-link>
           </div>
           <div class="hidden sm:ml-6 sm:block">
+            <!-- <Search class="w-64" /> -->
             <div class="flex space-x-4">
+              <Search class="mt-3 lg:mt-0" />
               <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
             </div>
           </div>
@@ -54,7 +56,9 @@
     </div>
 
     <DisclosurePanel class="sm:hidden">
+      <Search class="w-full px-3 py-2"/>
       <div class="space-y-1 px-2 pt-2 pb-3">
+        <!-- <Search class="w-full px-3 py-2" /> -->
         <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
       </div>
     </DisclosurePanel>
